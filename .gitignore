@@ -1,2 +1,5 @@
 *.aux
 *.log
+resume.fdb_latexmk
+resume.fls
+resume.synctex.gz
