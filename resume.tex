@@ -1,58 +1,65 @@
 \documentclass[a4paper]{article}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{datetime}
+
 
 \newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
+	\vspace*{-8pt} \\
+	\hspace*{-18pt} \hrulefill \\
 }
 
 \newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
+	{\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+	\vspace*{-6pt} \lineunder
 }
 
 \begin{document}
 \vspace*{-40pt}
-    
+	
 
-\vspace*{-30pt}
+% \vspace*{-30pt}
 \begin{center}
 	{\Huge \scshape {Nachiketa Gargi}}\\
-	contact@ngargi.me $\cdot$ github.com/nacgarg $\cdot$ (650) 335-8753 $\cdot$ Sunnyvale, CA \\
+	ngargi@umich.edu $\cdot$ github.com/nacgarg $\cdot$ (650) 335-8753 $\cdot$ Sunnyvale, CA \\
 \end{center}
 \header{Education}
-
 \noindent
-\textbf{University of Michigan} \hfill Aug 2018 - June 2022 (expected)
+\textbf{University of Michigan} \hfill Class of 2022
 \vspace{-2mm}
 \begin{itemize}
-    \setlength{\itemindent}{-3mm}
-    \item[] \textit{B.S. in Computer Science (expected)}\vspace{-3mm}
-    \item[] \textit{B.F.A. in Performing Arts Technology (expected)}
+	\setlength{\itemindent}{-3mm}
+	\item[] \textit{B.S.E. in Computer Science (expected)}\vspace{-3mm}
+	\item[] \textit{B.F.A. in Performing Arts Technology (expected)}
+	\item[] Relevant Coursework: \textsc{eecs} 280, \textsc{math} 116\vspace{-3mm}
+	\item[] Clubs and Organizations: UM::Autonomy, MIDAS Music Theory
 \end{itemize}
-\noindent
-\textbf{The Nueva School} \hfill Aug 2014 - June 2018\\
-\vspace{-4mm}
-
-FRC Robotics Team 4904, Jazz Ensemble, Programming Club, Music Production and DJ Club\\
-
 
 \noindent
 \header{Work Experience}
-
+\noindent
+\textbf{MIDAS Music Theory} - \url{midasmusictheory.org} \hfill Sep 2018 - Present\\
+\textit{Research Assistant} \\ 
+\vspace{-6mm}
+\begin{itemize} \itemsep 0.1pt
+	\item Member of the MIDAS project “A Computational Study of Patterned Melodic Structures Across Musical Cultures” being carried out at the University of Michigan.
+	\item Working on developing a method to transcribe a corpus of Indian music compositions automatically.
+\end{itemize}
 
 \noindent
-\textbf{YouSound} \hfill June 2017 - Present\\
+\textbf{YouSound} - \url{yousound.com} \hfill Jun 2017 - Sep 2018\\
 \textit{Full Stack Developer} \\
-\vspace{-4mm}
+\vspace{-6mm}
 \begin{itemize} \itemsep 0.1pt
 	\item Created a scaleable chat platform to accompany the rest of the site using Node and socket.io, deployed on AWS.
 	\item Researched and documented setup instructions and assisted in implementation for a web-scale video live-streaming platform (like twitch.tv) using AWS Elemental MediaLive, MediaPackage, and CloudFront.
 \end{itemize}
 
 \noindent
-\textbf{Primity Bio} \hfill June 2016 - Sep 2016\\
+\textbf{Primity Bio} - \url{primitybio.com} \hfill Jun 2016 - Sep 2016\\
 \textit{Software Engineering Intern} \\
-\vspace{-4mm}
+\vspace{-6mm}
 \begin{itemize} \itemsep 0.1pt
 	\item Worked on a web-based realtime, collaborative data analysis platform for clients using test-based development with Node, Angular, and MongoDB.
 	\item This work was presented at an FDA conference in Washington, D.C.
@@ -60,12 +67,19 @@ FRC Robotics Team 4904, Jazz Ensemble, Programming Club, Music Production and DJ
 
 
 
-\header{Projects}
+\header{Projects and Publications}
+\noindent
+\textbf{ISMIR 2018} \hfill Jun 2018 - Sep 2018\\
+\textit{Adversarial Reinforcement Learning for Music Generation} \hfill Python, Keras, \LaTeX\\
+\vspace{-25pt}
+\begin{paragraph}{}
+Paper describing my findings when experimenting with various methods of music generation was accepted in the Late-Breaking Demos session at ISMIR 2018. Available \href{http://ismir2018.ircam.fr/pages/events-lbd.html}{on \underline{ISMIR's website}}.\\
+\end{paragraph}
 
 \noindent
 \textbf{FieldAC} \hfill Jan 2018 - Apr 2018\\
 \textit{FRC Robot and Object Localization} \hfill C++, OpenCV, Darknet\\
-\vspace{-20pt}
+\vspace{-25pt}
 \begin{paragraph}{}
 As part of FRC team, trained a custom model for an object detection framework (YOLOv3) on game pieces. Created field model that used optical flow in conjunction with YOLOv3, onboard LiDAR, and IMU to estimate pose of robot and game pieces on the field. Model was used for an autonomous routine to manipulate the nearest game piece.\\
 
@@ -73,7 +87,7 @@ As part of FRC team, trained a custom model for an object detection framework (Y
 \noindent
 \textbf{AutoMuse} \hfill Oct 2014 - June 2016\\
 \textit{Automated computer music composition} \hfill Python, Keras
-\vspace{-10pt}
+\vspace{-13pt}
 \begin{paragraph}{}
 Used markov chains and LSTM neural networks to generate music from a dataset of scraped MIDI files. \\ 
 
@@ -81,18 +95,18 @@ Used markov chains and LSTM neural networks to generate music from a dataset of 
 
 \noindent
 \header{Skills}
-
 \noindent
+
 \begin{tabular}{ l l }
 	Programming Languages & JS, Python, Go, Bash, C++, Java, Max/MSP \\
 	Creative Software             & Ableton Live, After Effects, Photoshop, Logic    \\
-	Other                  & Markdown, AWS, GCP, Git, Slack, Trello        \\
+	Other                  & Git, AWS, GCP, Slack, Trello        \\
 \end{tabular}
 \vspace{8mm}
 \pagenumbering{gobble}
 \noindent
 \begin{center}
-    \sc{Nachiketa Gargi, August 2018}
+	\sc{Nachiketa Gargi, \monthname{} \the\year{}}
 \end{center}
 \ 
 \end{document}
