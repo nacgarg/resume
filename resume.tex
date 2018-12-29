@@ -15,6 +15,10 @@
 	\vspace*{-6pt} \lineunder
 }
 
+
+\usepackage{xcolor}
+\DeclareUrlCommand{\bulurl}{\def\UrlFont{\color{blue}\ulined}}
+
 \begin{document}
 \vspace*{-30pt}
 	
@@ -22,7 +26,7 @@
 % \vspace*{-30pt}
 \begin{center}
 	{\Huge \scshape {Nachiketa Gargi}}\\
-	ngargi@umich.edu $\cdot$ \url{github.com/nacgarg} $\cdot$ (650) 335-8753 $\cdot$ Sunnyvale, CA \\
+	ngargi@umich.edu $\cdot$ \url{https://github.com/nacgarg} $\cdot$ (650) 335-8753 $\cdot$ Sunnyvale, CA \\
 \end{center}
 \noindent
 \header{Education}
@@ -32,76 +36,81 @@
 \begin{itemize}
 	\setlength{\itemindent}{-3mm}
 	\item[] \textit{B.S.E. in Computer Science (expected)}\vspace{-3mm}
-	\item[] \textit{B.F.A. in Performing Arts Technology (expected)}
-	\item[] Relevant Coursework: \\ Programming and Introductory Data Structures (\textsc{eecs 280}), Calculus II (\textsc{math 116}) at U-M \\ Advanced Machine Learning, Differential Equations, Advanced Mechanics in high school
-	\item[] Clubs and Organizations:\\ \href{https://umautonomy.com/}{UM::Autonomy} (autonomous vehicle design team), \href{http://www.midasmusictheory.org/}{MIDAS} (Michigan Institute of Data Science) Music Theory, \href{https://michiganprojectmusic.github.io/index.html}{Project Music} (experimental musical instrument design) 
+	\newline
+	\vspace{-1mm}
+
+	\item[] Relevant Coursework: \\ C++ Programming and Introductory Data Structures (\textsc{eecs 280}), Discrete Math (\textsc{eecs 203}), Introduction to Linguistic Analysis, (\textsc{ling 210}) at U-M \\ Advanced Machine Learning, Differential Equations, Advanced Mechanics in high school
+	\item[] Clubs and Organizations:\\ \href{https://umautonomy.com/}{UM::Autonomy} (autonomous vehicle design team), \href{http://www.midasmusictheory.org/}{MIDAS} (Michigan Institute of Data Science) Computational Music Theory, \href{https://michiganprojectmusic.github.io/index.html}{Project Music} (experimental musical instrument design) 
 \end{itemize}
 
 \noindent
 \header{Work Experience}
 \noindent
-\textbf{MIDAS Music Theory} - \url{midasmusictheory.org} \hfill Sep 2018 - Present\\
-\textit{Research Assistant} \\ 
+\textbf{Research Assistant} \hfill Sep 2018 - Present\\
+\textit{MIDAS Research Group} - \href{https://midasmusictheory.org}{\texttt{midasmusictheory.org}} \hfill Python, OpenCV, music21, Tesseract\\
 \vspace{-6mm}
 \begin{itemize} \itemsep 0.1pt
-	\item Member of the Michigan Institute for Data Science project “A Computational Study of Patterned Melodic Structures Across Musical Cultures,” a collaborative research project between EECS, Math, and Music faculty.
-	\item Developing automatic methods to transcribe scanned images of Indian classical music compositions.
+	\item Research assistant for the Michigan Institute for Data Science project “A Computational Study of Patterned Melodic Structures Across Musical Cultures,” a collaborative research project between EECS, Math, and Music faculty.
+	\item Developed novel method of optical mark recognition to detect and process Devanagari script and additional markings to produce a computer-readable archive of Indian music compositions documented in 1860. Corpus will be used for data analysis to determine data-driven musicological conclusions between other musical traditions including Irish folk music and Baroque music. 
 \end{itemize}
 
 \noindent
-\textbf{YouSound} - \url{yousound.com} \hfill Jun 2017 - Sep 2018\\
-\textit{Full Stack Developer} \\
+\textbf{Full Stack Developer} \hfill Jun 2017 - Sep 2018\\
+\textit{YouSound} - \href{https://yousound.com/}{\texttt{yousound.com}} \hfill Vue, AWS, socket.io, Node.js \\
 \vspace{-6mm}
 \begin{itemize} \itemsep 0.1pt
-	\item Created a scaleable chat platform to accompany the rest of the site using Node and socket.io, deployed on AWS.
-	\item Researched and documented setup instructions and assisted in implementation for a web-scale video live-streaming platform (like twitch.tv) using AWS Elemental MediaLive, MediaPackage, and CloudFront.
+	\item Singlehandedly developed a scaleable backend for an artist chat platform using Node.js and socket.io, deployed at production scale using AWS.
+	\item Implemented a web-scale video live-streaming platform (like twitch.tv) using AWS Elemental MediaLive, MediaPackage, and CloudFront.
+    \item Worked directly with founder and designers to implement and integrate Vue.js front-end for the chat platform using existing and new APIs while rapidly adapting to and using a consistent code style.
 \end{itemize}
 
 \noindent
-\textbf{Primity Bio} - \url{primitybio.com} \hfill Jun 2016 - Sep 2016\\
-\textit{Software Engineering Intern} \\
+\textbf{Software Engineering Intern} \hfill Jun 2016 - Sep 2016\\
+\textit{Primity Bio} - \href{https://primitybio.com}{\texttt{primitybio.com}} \hfill Angular, Node.js, Mocha \\
 \vspace{-6mm}
 \begin{itemize} \itemsep 0.1pt
-	\item Worked on a web-based realtime, collaborative data analysis platform for clients using test-based development with Node, Angular, and MongoDB.
+	\item Developed a web-based realtime, collaborative data analysis platform (similar to Google Docs) for clients to view flow cytometry data.
+	\item Used test-based (Mocha) development with Node, Angular, and MongoDB.
 	\item This work was presented at an FDA conference in Washington, D.C.
 \end{itemize}
 
 \newpage
 \noindent
-\header{Projects and Publications}
+\header{Projects and Publications (click titles to learn more)}
 \noindent
-\href{https://github.com/nacgarg/music-makeathon}{\textbf{Music Makeathon}} \hfill Oct 2018\\
+\href{https://github.com/nacgarg/music-makeathon}{\textbf{Music Makeathon: 1st Place}} \hfill Oct 2018\\
 \textit{Realtime Sound-controlled Audio and Video Resampling} \hfill C++, JUCE, Max \\
 \vspace{-25pt}
 \begin{paragraph}{}
-	Won first place in the Project Music 2018 Makeathon with a live, realtime remixer that uses FFT to replace input audio with audio from existing songs. In addition, used Max to control video playback based on frequency and amplitude of input audio. The entire project was completed within 18 hours.\\
+	 Built a live, real-time audio processor with C++ and JUCE that uses an FFT comparison heuristic to replace input audio with audio from existing songs, producing a unique "remixing" effect. In addition, used Max to control video playback based on frequency and amplitude of input audio. The entire project was completed within 18 hours. \textbf{Won first place} in the U-M Project Music 2018 Makeathon.
+	 \href{https://news.engin.umich.edu/2018/12/hacking-the-perfect-melody/}{Featured in \color{blue}{U-M Engineering Newsletter.}} \\
 \end{paragraph}
 
 
 \noindent
-\href{http://ismir2018.ircam.fr/pages/events-lbd.html}{\textbf{ISMIR 2018}} \hfill Jun 2018 - Sep 2018\\
-\textit{Adversarial Reinforcement Learning for Music Generation} \hfill Python, Keras, \LaTeX\\
+\href{http://ismir2018.ircam.fr/pages/events-lbd.html}{\textbf{Conference Publication: Deep Neural Music Generation}} \hfill Jun 2018 - Sep 2018\\
+\textit{International Society of Music Information Retrieval 2018} \hfill Python, Keras, \LaTeX\\
 \vspace{-25pt}
 \begin{paragraph}{}
 \begin{sloppypar}
-Using a generative adversarial network with music theory constraints. \href{http://ismir2018.ircam.fr/pages/events-lbd.html}{ISMIR 2018, Late Breaking Session}.\\
+"Adversarial Reinforcement Learning for Music Generation" using a generative adversarial network with music theory constraints. Accepted to \href{http://ismir2018.ircam.fr/pages/events-lbd.html}{\color{blue}{ISMIR 2018, Late Breaking Session}}.\\
 \end{sloppypar}
 \end{paragraph}
 
 \noindent
-\href{https://github.com/RoboticsTeam4904/FieldAC}{\textbf{FieldAC}} \hfill Jan 2018 - Apr 2018\\
-\textit{FRC Robot and Object Localization} \hfill C++, OpenCV, Darknet\\
+\href{https://github.com/RoboticsTeam4904/FieldAC}{\textbf{FRC Robot and Object Localization}} \hfill Jan 2018 - Apr 2018\\
+\textit{FieldAC} \hfill C++, OpenCV, Darknet\\
 \vspace{-25pt}
 \begin{paragraph}{}
 As part of FRC team, trained a custom model for an object detection framework (YOLOv3) on game pieces. Used a novel method for sensor fusion to maintain a field model using optical flow in conjunction with YOLOv3, onboard LiDAR, and IMU to estimate pose of robot and game pieces on the field. Model was used for an autonomous routine to manipulate the nearest game piece.\\
 \end{paragraph}
 
 \noindent
-\href{https://kanooli.com/}{\textbf{Kanooli}} \hfill Oct 2016 - Present\\
-\textit{Electronic Music Production} \hfill Ableton Live\\
+\href{https://kanooli.com/}{\textbf{Independent Electronic Music Production}} \hfill Oct 2016 - Present\\
+\textit{Kanooli} \hfill Ableton Live\\
 \vspace{-25pt}
 \begin{paragraph}{}
-	Regularly produce electronic compositions under the alias Kanooli. Developed branding strategy and accompanying website, and have accumulated over 100k plays through releases on several labels.\\
+	Regularly produce electronic compositions under the alias Kanooli. Developed branding strategy and \href{https://kanoo.li/}{\color{blue}{accompanying website}}, and have accumulated over 200k plays through releases on several indie music labels with large audiences.\\
 \end{paragraph}
 
 \noindent
@@ -127,10 +136,11 @@ Used markov chains and LSTM neural networks to generate music from a dataset of 
 
 \begin{tabular}{ l l }
 	Programming Languages & JS, Python, Go, Bash, C++, Java, Max/MSP \\
+	Frameworks and Technologies & Keras, Numpy, JUCE, Vue, OpenCV, Unreal Engine 4 \\
 	Creative Software             & Ableton Live, After Effects, Photoshop, Logic    \\
-	Other                  & Git, AWS, GCP, Slack, Trello        \\
+	Other                  & Git, AWS, GCP, Slack, Trello       \\
 \end{tabular}
-\vspace{8mm}
+\vspace{3mm}
 % \pagenumbering{gobble}
 \noindent
 \begin{center}
